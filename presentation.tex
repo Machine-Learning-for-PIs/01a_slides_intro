@@ -1,0 +1,124 @@
+% no notes
+\documentclass{beamer}
+% notes and slides
+%\documentclass[notes]{beamer}
+% notes only
+% \documentclass[notes=only]{beamer}
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{multirow}
+\usepackage{multimedia}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{url}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepgfplotslibrary{groupplots,dateplot}
+\usetikzlibrary{patterns,shapes.arrows}
+\usepackage{standalone}
+\usepackage{adjustbox}
+\usepackage{lmodern}
+\usepackage{pgfplots}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{multimedia}
+\usepackage{standalone}
+\usepackage{csquotes}
+
+
+\PassOptionsToPackage{american}{babel} % change this to your language(s), main language last
+% Spanish languages need extra options in order to work with this template
+% \PassOptionsToPackage{spanish,es-lcroman}{babel}
+\usepackage{babel}
+
+\PassOptionsToPackage{%
+  backend=biber,bibencoding=utf8, %instead of bibtex
+  %backend=bibtex8,bibencoding=ascii,%
+  language=auto,%
+  style=numeric-comp,%
+  %style=authoryear-comp, % Author 1999, 2010
+  %bibstyle=authoryear,dashed=false, % dashed: substitute rep. author with ---
+  style=alphabetic,
+  sorting=nyt, % name, year, title
+  maxbibnames=10, % default: 3, et al.
+  %backref=true,%
+  %natbib=true % natbib compatibility mode (\citep and \citet still work)
+}{biblatex}
+\usepackage{biblatex}
+
+\addbibresource{bib.bib}
+
+\usetheme{metropolis}           % Use metropolis theme
+\setbeamertemplate{caption}[default]
+\title{Course introduction}
+\date{\today}
+\institute{High-Performance Computing and Analytics Lab, Universität Bonn}
+\author{Moritz Wolter}
+
+\titlegraphic{\includegraphics[width=2.00cm]{UNI_Bonn_Logo_Standard_RZ.pdf}}
+\begin{document}
+    \maketitle
+
+    \begin{frame}
+    \frametitle{Overview} 
+    \tableofcontents
+    \end{frame}
+
+    \section{Organization}
+    \begin{frame}{Who are we?}
+      Instructors
+      \begin{itemize}
+        \item Elena Trunz, Postdoc with the Visual Computing Group
+        \begin{itemize}
+          \item trunz@cs.uni-bonn.de
+        \end{itemize}
+        \item Moritz Wolter, Postdoc with the HPCA Lab
+        \begin{itemize}
+          \item moritz.wolter@uni-bonn.de
+        \end{itemize}
+      \end{itemize}
+      Teaching Assistants:
+      \begin{itemize}
+        \item Pauline Lion, Bachelor student Computer Science
+        \item Konstantin Gasenzer, Master student Computer Science
+        \item Zahra Ganji, Master student Computer Science
+        \item Lokesh Veeramacheneni, Ph.D. student with the HPCA Lab.
+      \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Course Material}
+      \begin{itemize}
+        \item  We will upload Github-Classroom links, 
+               Lecture recordings and slides onto Ecampus.
+        \begin{itemize}
+          \item \url{https://ecampus.uni-bonn.de/}
+          \item To access eCampus, you need a UniID $\rightarrow$ helpdesk HRZ.
+        \end{itemize}
+        \item You can opt out of GitHub use. We provided zip files via Ecampus.
+        \item We envision a hands-on course experience.
+        \item You should be able to gain an intuition
+              for modern machine learning algorithms and possible applications.
+        \item Many exercises come with unit tests, which allow you to check your work.
+      \end{itemize}
+    \end{frame}
+
+    \section{Machine Learning Applications}
+    \begin{frame}{Machine learning is everywhere}
+        \begin{itemize}
+          \item Medical Image processing
+          \item Protein structure prediction
+          \item Language processing
+          \item Virtual personal assistants
+          \item Fraud detection
+          \item Self-driving cars
+          \item Recommendations
+          \item Search
+          \item Photo editing
+        \end{itemize}
+    \end{frame}
+  
+    % \begin{frame}{Literature}
+    %   \printbibliography
+    % \end{frame}
+
+\end{document}
